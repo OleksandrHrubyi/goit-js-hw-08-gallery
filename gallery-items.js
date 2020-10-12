@@ -160,7 +160,7 @@ function onClickBtnPrev() {
 
 function sortNext() {
   for (let i = 0; i < allOriginalUrl.length; i += 1) {
-    if (ref.imgOnModal.src === allOriginalUrl[8]) {
+    if (ref.imgOnModal.src === allOriginalUrl[allOriginalUrl.length - 1]) {
       ref.imgOnModal.src = `${allOriginalUrl[0]}`;
       return;
     } else if (ref.imgOnModal.src === allOriginalUrl[i]) {
@@ -173,7 +173,7 @@ function sortNext() {
 function sortPrev() {
   for (let i = 0; i < allOriginalUrl.length; i += 1) {
     if (ref.imgOnModal.src === allOriginalUrl[0]) {
-      ref.imgOnModal.src = `${allOriginalUrl[8]}`;
+      ref.imgOnModal.src = `${allOriginalUrl[allOriginalUrl.length - 1]}`;
       return;
     } else if (ref.imgOnModal.src === allOriginalUrl[i]) {
       ref.imgOnModal.src = `${allOriginalUrl[i - 1]}`;
